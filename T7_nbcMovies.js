@@ -6,6 +6,8 @@ describe('Protractor NBC Homepage', function() {
             browser.waitForAngularEnabled(false);
             expect(browser.getTitle()).toEqual('UPHE REWARDS');
 
+            element(by.css("div.carna-menu-wrap>ul>li>a[href='/movies']")).isPresent().toBe(true);
+            element(by.css("div.carna-menu-wrap>ul>li>a[href='/movies']")).click();
 
             element(by.xpath("//h1[contains(text(),'Participating movies')]")).isPresent().toBe(true);
 
@@ -18,9 +20,6 @@ describe('Protractor NBC Homepage', function() {
 
             let list = element.all(by.css('div.team-block__details'));
             expect(list.count()).not.toEqual(0);
-
-
-
 
 
         });
