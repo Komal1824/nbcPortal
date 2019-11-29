@@ -20,7 +20,7 @@ describe('NBC Portal', () => {
         element(by.css("input#file")).isPresent().toBe(true);
         element(by.css("input#file")).click();
 
-        
+
 
 
     })
