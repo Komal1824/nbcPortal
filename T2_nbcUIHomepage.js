@@ -1,4 +1,6 @@
 describe('Protractor NBC Homepage', function() {
+    var objectHomepage = require("./InputOutput.js");
+
     it('Should navigate to NBC Portal', () => {
         browser.get('http://nbc.3tlstaging.com/home')
             .then(() => (browser.getTitle()))
@@ -11,65 +13,67 @@ describe('Protractor NBC Homepage', function() {
         expect(browser.getTitle()).toEqual('UPHE REWARDS')
     })
 
+
+
     it('NBC Portal should have a logo',function()
     {
         //navigation bar
-        var logo = link_logo.isPresent().toBe(true);
+        var logo = objectHomepage.link_logo.isPresent().toBe(true);
         highlightElement(logo);
         //nav bar
-        var home = link_home.isPresent().toBe(true);
+        var home = objectHomepage.link_home.isPresent().toBe(true);
         highlightElement(home);
-        var howitWorks = link_howitworks.isPresent().toBe(true);
+        var howitWorks = objectHomepage.link_howitworks.isPresent().toBe(true);
         highlightElement(howitWorks);
-        var login =link_login.isPresent().toBe(true);
+        var login =objectHomepage.link_login.isPresent().toBe(true);
         highlightElement(login);
-        var validatecode = link_validate.isPresent().toBe(true);
+        var validatecode = objectHomepage.link_validate.isPresent().toBe(true);
         highlightElement(validatecode);
-        var uploadReceipt=link_receipt.isPresent().toBe(true);
+        var uploadReceipt=objectHomepage.link_receipt.isPresent().toBe(true);
         highlightElement(uploadReceipt);
-        var movies = link_movies.isPresent().toBe(true);
+        var movies = objectHomepage.link_movies.isPresent().toBe(true);
         highlightElement(movies);
-        var support = link_contact.isPresent().toBe(true);
+        var support = objectHomepage.link_contact.isPresent().toBe(true);
         highlightElement(support);
 
         //Register link not present
-        link_register.isPresent().toBe(false);
+        objectHomepage.link_register.isPresent().toBe(false);
 
         //homepage banner
-      link_homePageBanner.isPresent().toBe(true);
+        objectHomepage.link_homePageBanner.isPresent().toBe(true);
 
         //verify Getrewarded text
        /* element(by.xpath("//div[@class='tp-mask-wrap' and contains(.,'GET REWARDED')]"))
             .isPresent().toBe(true);
 */
-        text_GetRewarded.isPresent().toBe(true);
+        objectHomepage.text_GetRewarded.isPresent().toBe(true);
 
-        text_redeemYourCode.isPresent().toBe(true);
+        objectHomepage.text_redeemYourCode.isPresent().toBe(true);
 
 
-        button_loginInNow.isPresent().toBe(true);
+        objectHomepage.button_loginInNow.isPresent().toBe(true);
 
         //how it works section
-        text_HowItWorksSectionHeading.isPresent().toBe(true);
+        objectHomepage.text_HowItWorksSectionHeading.isPresent().toBe(true);
         countTiles(3);
 
         //Frequently asked questions
-        text_frequentlyAskedQuestions.isPresent().toBe(true);
+        objectHomepage.text_frequentlyAskedQuestions.isPresent().toBe(true);
         faqTileCount(8);
 
 
         //Questions
         text_Questions.isPresent().toBe(true);
 
-        labelName.isPresent().toBe(true);
+        objectHomepage.labelName.isPresent().toBe(true);
         var nameRequired = element(by.xpath("//label[@for='name']//span"));
         expect(nameRequired.getAttribute('class')).toEqual('quform-required');
 
-        labelEmail.isPresent().toBe(true);
+        objectHomepage.labelEmail.isPresent().toBe(true);
         var emailRequired = element(by.xpath("//label[@for='email']/span"));
         expect(emailRequired.getAttribute('class')).toEqual('quform-required');
 
-        labelQuery.isPresent().toBe(true);
+        objectHomepage.labelQuery.isPresent().toBe(true);
         var messageRequired = element(by.xpath("//label[@for='query']/span"));
         expect(messageRequired.getAttribute('class')).toEqual('quform-required');
 

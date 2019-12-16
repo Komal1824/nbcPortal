@@ -1,5 +1,6 @@
-function allLocators()
+module.exports = function allLocators()
 {
+
     this.link_logo = element(by.css("div.brand-wrap > a[href='/home']"));
     this.link_home = element(by.css("ul.carna-menu >li >  a[href='/home']"));
     this.link_howitworks = element(by.css("ul.carna-menu >li >  a[href='#howitworks']"));
