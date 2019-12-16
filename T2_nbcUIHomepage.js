@@ -50,28 +50,26 @@ describe('Protractor NBC Homepage', function() {
         button_loginInNow.isPresent().toBe(true);
 
         //how it works section
-        element(by.cssContainingText("How it Works?")).isPresent().toBe(true);
-        let tiles = element.all(by.css('div.team-block__details'));
-        expect(tiles.count()).toEqual(3);
+        text_HowItWorksSectionHeading.isPresent().toBe(true);
+        countTiles(3);
 
         //Frequently asked questions
-        element(by.cssContainingText("Frequently Asked Questions")).isPresent().toBe(true);
-        let faqTiles = element.all(by.css('div.cbp-news__content'));
-        expect(l.count()).toEqual(8);
+        text_frequentlyAskedQuestions.isPresent().toBe(true);
+        faqTileCount(8);
 
 
         //Questions
-        element(by.cssContainingText("Questions")).isPresent().toBe(true);
+        text_Questions.isPresent().toBe(true);
 
-        element(by.xpath("//label[@for='name']")).isPresent().toBe(true);
+        labelName.isPresent().toBe(true);
         var nameRequired = element(by.xpath("//label[@for='name']//span"));
         expect(nameRequired.getAttribute('class')).toEqual('quform-required');
 
-        element(by.xpath("//label[@for='email']")).isPresent().toBe(true);
+        labelEmail.isPresent().toBe(true);
         var emailRequired = element(by.xpath("//label[@for='email']/span"));
         expect(emailRequired.getAttribute('class')).toEqual('quform-required');
 
-        element(by.xpath("//label[@for='query']")).isPresent().toBe(true);
+        labelQuery.isPresent().toBe(true);
         var messageRequired = element(by.xpath("//label[@for='query']/span"));
         expect(messageRequired.getAttribute('class')).toEqual('quform-required');
 
