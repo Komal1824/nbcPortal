@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b43eb4d-088a-4cd6-8e32-b798435cdf69" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/T1_nbcNavigationCheck.js" afterPath="$PROJECT_DIR$/T1_nbcNavigationCheck.js" />
+      <change beforePath="$PROJECT_DIR$/InputOutput.js" afterPath="$PROJECT_DIR$/InputOutput.js" />
       <change beforePath="$PROJECT_DIR$/T2_nbcUIHomepage.js" afterPath="$PROJECT_DIR$/T2_nbcUIHomepage.js" />
-      <change beforePath="$PROJECT_DIR$/T3_nbcLoginPage.js" afterPath="$PROJECT_DIR$/T3_nbcLoginPage.js" />
-      <change beforePath="$PROJECT_DIR$/T6_UploadReceiptFunctionality.js" afterPath="$PROJECT_DIR$/T6_UploadReceiptFunctionality.js" />
-      <change beforePath="$PROJECT_DIR$/conf.js" afterPath="$PROJECT_DIR$/conf.js" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/../nbdPortal/.tmp/" />
     <ignored path="$PROJECT_DIR$/../nbdPortal/temp/" />
@@ -42,21 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputOutput.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InputOutput.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InputOutput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="288">
+              <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="T2_nbcUIHomepage.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="T2_nbcUIHomepage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/T2_nbcUIHomepage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+            <state relative-caret-position="234">
+              <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -80,10 +75,10 @@
         <option value="$PROJECT_DIR$/T6_UploadReceiptFunctionality.js" />
         <option value="$PROJECT_DIR$/conf.js" />
         <option value="$PROJECT_DIR$/T1_nbcNavigationCheck.js" />
-        <option value="$PROJECT_DIR$/T2_nbcUIHomepage.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/T3_nbcLoginPage.js" />
         <option value="$PROJECT_DIR$/InputOutput.js" />
+        <option value="$PROJECT_DIR$/T2_nbcUIHomepage.js" />
       </list>
     </option>
   </component>
@@ -169,12 +164,12 @@
       <workItem from="1574946649306" duration="2471000" />
       <workItem from="1575262870145" duration="12615000" />
       <workItem from="1576125226248" duration="4865000" />
-      <workItem from="1576472555763" duration="1411000" />
+      <workItem from="1576472555763" duration="2701000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31277000" />
+    <option name="totallyTimeSpent" value="32567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -554,14 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/T3_nbcLoginPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -596,18 +583,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/T2_nbcUIHomepage.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+        <state relative-caret-position="144">
+          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InputOutput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="288">
+          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T2_nbcUIHomepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -14,44 +14,40 @@ describe('Protractor NBC Homepage', function() {
     it('NBC Portal should have a logo',function()
     {
         //navigation bar
-        var logo = element(by.css("div.brand-wrap > a[href='/home']")).isPresent().toBe(true);
+        var logo = link_logo.isPresent().toBe(true);
         highlightElement(logo);
         //nav bar
-        var home = element(by.css("ul.carna-menu >li >  a[href='/home']")).isPresent().toBe(true);
+        var home = link_home.isPresent().toBe(true);
         highlightElement(home);
-        var howitWorks = element(by.css("ul.carna-menu >li >  a[href='#howitworks']")).isPresent().toBe(true);
+        var howitWorks = link_howitworks.isPresent().toBe(true);
         highlightElement(howitWorks);
-        var login = element(by.css("div.carna-menu-wrap>ul>li>a[href='/login']")).isPresent().toBe(true);
+        var login =link_login.isPresent().toBe(true);
         highlightElement(login);
-        var validatecode = element(by.css("div.carna-menu-wrap>ul>li>a[href='/validate']")).isPresent().toBe(true);
+        var validatecode = link_validate.isPresent().toBe(true);
         highlightElement(validatecode);
-        var uploadReceipt=element(by.css("div.carna-menu-wrap>ul>li>a[href='/receipt']")).isPresent().toBe(true);
+        var uploadReceipt=link_receipt.isPresent().toBe(true);
         highlightElement(uploadReceipt);
-        var movies = element(by.css("div.carna-menu-wrap>ul>li>a[href='/movies']")).isPresent().toBe(true);
+        var movies = link_movies.isPresent().toBe(true);
         highlightElement(movies);
-        var support = element(by.css("div.carna-menu-wrap>ul>li>a[href='#contact']")).isPresent().toBe(true);
+        var support = link_contact.isPresent().toBe(true);
         highlightElement(support);
 
         //Register link not present
-        element(by.cssContainingText("Register")).isPresent().toBe(false);
-
-
+        link_register.isPresent().toBe(false);
 
         //homepage banner
-        element(by.css("div.tp-mask-wrap>div>img[src='../../assets/images/54b46-gerrewardednew.jpg']"))
-            .isPresent().toBe(true);
+      link_homePageBanner.isPresent().toBe(true);
 
         //verify Getrewarded text
        /* element(by.xpath("//div[@class='tp-mask-wrap' and contains(.,'GET REWARDED')]"))
             .isPresent().toBe(true);
 */
-        element(by.css("div#slide-214-layer-5")).isPresent().toBe(true);
+        text_GetRewarded.isPresent().toBe(true);
 
-        element(by.css("div#slide-214-layer-6"))
-            .isPresent().toBe(true);
+        text_redeemYourCode.isPresent().toBe(true);
 
-        element(by.xpath("//div[@class='tp-mask-wrap' and contains(.,'LOGIN NOW')]"))
-            .isPresent().toBe(true);
+
+        button_loginInNow.isPresent().toBe(true);
 
         //how it works section
         element(by.cssContainingText("How it Works?")).isPresent().toBe(true);
