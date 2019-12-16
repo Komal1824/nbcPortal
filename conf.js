@@ -8,7 +8,7 @@ exports.config = {
         },
         onPrepare : function (){
             browser.manage().window().maximize()
-           // browser.manage().timeouts().implicitlyWait(90000)
+            browser.manage().timeouts().implicitlyWait(90000)
 
     }
     //for chrome cababilities need not be defined.

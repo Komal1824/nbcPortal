@@ -42,10 +42,12 @@ describe('Protractor NBC Homepage', function() {
             .isPresent().toBe(true);
 
         //verify Getrewarded text
-        element(by.xpath("//div[@class='tp-mask-wrap' and contains(.,'GET REWARDED')]"))
+       /* element(by.xpath("//div[@class='tp-mask-wrap' and contains(.,'GET REWARDED')]"))
             .isPresent().toBe(true);
+*/
+        element(by.css("div#slide-214-layer-5")).isPresent().toBe(true);
 
-        element(by.xpath("//div[@class='tp-mask-wrap' and contains(.,'REDEEM YOUR CODE')]"))
+        element(by.css("div#slide-214-layer-6"))
             .isPresent().toBe(true);
 
         element(by.xpath("//div[@class='tp-mask-wrap' and contains(.,'LOGIN NOW')]"))

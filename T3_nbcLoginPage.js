@@ -50,10 +50,6 @@ describe('Protractor Demo App', function() {
             element(by.css("div.carna-menu-wrap>ul>li>a[href='#contact']")).isPresent().toBe(true);
 
 
-
-
-
-
             var customlocators = function() {
 
 
