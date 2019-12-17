@@ -7,7 +7,7 @@ exports.config = {
     capabilities: {
         'browserName': 'chrome',
     },
-    allScriptsTimeout: 240000,
+    allScriptsTimeout: 2400000,
     //for screenshots
     onPrepare : function()
       {
