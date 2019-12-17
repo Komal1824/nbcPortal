@@ -6,14 +6,14 @@
   "dependencies":{
     "protractor": "^5.4.2",
     "jasmine-data-provider" : "^2.2.0" ,
-    "protractor-jasmine2-html-reporter":"^0.0.7"
+    //"protractor-jasmine2-html-reporter":"^0.0.7"
 
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webdriver-update" : "./node_modules/.bin/webdriver-manager start",
     "protractor" : "./node_modules/.bin/protractor conf.js",
-    "start":"npm run webdriver-update &&npm run webdriver-start"
+    "start":"npm run webdriver-update --versions.chrome=73.0.3683.86 &&npm run webdriver-start"
 
 
   },

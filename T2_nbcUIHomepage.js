@@ -1,5 +1,5 @@
 describe('Protractor NBC Homepage', function() {
-    var objectHomepage = require("./InputOutput.js");
+    var objectHomepage = require("./InputOutpututput.js");
 
     it('Should navigate to NBC Portal', () => {
         browser.get('http://nbc.3tlstaging.com/home')
